@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dvqnpki3m5un6"]
+
+[ext_resource type="Script" uid="uid://x7i4sejoldqf" path="res://pause_menu.gd" id="1_hdmo1"]
+[ext_resource type="Script" uid="uid://r4q4ti3xlp4b" path="res://assets/button_effects_config.gd" id="2_05uyy"]
+[ext_resource type="FontFile" uid="uid://dx35nbed8vuuk" path="res://assets/Gothic_pixel_font(0S).ttf" id="3_p81d2"]
+
+[node name="PauseMenu" type="Control" unique_id=1323807307]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hdmo1")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1485541049]
+layout_mode = 0
+offset_left = -63.5
+offset_top = -50.5
+offset_right = 63.5
+offset_bottom = 50.5
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1431289888]
+layout_mode = 2
+text = "Zapisz"
+
+[node name="ButtonEffectsModule" type="Node" parent="VBoxContainer/Button" unique_id=928340509]
+script = ExtResource("2_05uyy")
+custom_font = ExtResource("3_p81d2")
+rotation_amount = 0.0
+metadata/_custom_type_script = "uid://r4q4ti3xlp4b"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=991494434]
+layout_mode = 2
+text = "Wczytaj"
+
+[node name="ButtonEffectsModule" type="Node" parent="VBoxContainer/Button2" unique_id=712562569]
+script = ExtResource("2_05uyy")
+custom_font = ExtResource("3_p81d2")
+rotation_amount = 0.0
+metadata/_custom_type_script = "uid://r4q4ti3xlp4b"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=753042298]
+layout_mode = 2
+text = "Wyjdz do menu"
+
+[node name="ButtonEffectsModule" type="Node" parent="VBoxContainer/Button3" unique_id=1960189037]
+script = ExtResource("2_05uyy")
+custom_font = ExtResource("3_p81d2")
+rotation_amount = 0.0
+metadata/_custom_type_script = "uid://r4q4ti3xlp4b"
+
+[node name="SaveManager" type="SaveManager" parent="." unique_id=594281415]

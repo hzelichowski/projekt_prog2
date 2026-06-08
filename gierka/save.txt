@@ -1,0 +1,1 @@
+{"destroyed":["Item1","Item2","Item"],"hp":100,"inventory":{"Magiczny Napoj":3,"Miecz":1},"x":584.029846191406,"y":-148.032989501953}

@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://bna4e8gwnsque"]
+
+[ext_resource type="Script" uid="uid://cc0cdbd70x0vi" path="res://main_menu.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://r4q4ti3xlp4b" path="res://assets/button_effects_config.gd" id="2_7vrkn"]
+[ext_resource type="FontFile" uid="uid://dx35nbed8vuuk" path="res://assets/Gothic_pixel_font(0S).ttf" id="3_fu7sn"]
+
+[node name="MainMenu" type="Control" unique_id=1472385825]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=176647930]
+layout_mode = 0
+offset_left = -135.0
+offset_top = -63.5
+offset_right = 135.0
+offset_bottom = 63.5
+alignment = 1
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=1181919372]
+layout_mode = 2
+text = "Nowa Gra"
+
+[node name="ButtonEffectsModule" type="Node" parent="VBoxContainer/Button" unique_id=2046135663]
+script = ExtResource("2_7vrkn")
+custom_font = ExtResource("3_fu7sn")
+rotation_amount = 1.0
+pulse_on_idle = true
+metadata/_custom_type_script = "uid://r4q4ti3xlp4b"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=98615113]
+layout_mode = 2
+text = "Wczytaj Gre"
+
+[node name="ButtonEffectsModule" type="Node" parent="VBoxContainer/Button2" unique_id=1097643953]
+script = ExtResource("2_7vrkn")
+custom_font = ExtResource("3_fu7sn")
+rotation_amount = 0.0
+metadata/_custom_type_script = "uid://r4q4ti3xlp4b"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=389202015]
+layout_mode = 2
+text = "Wyjdz"
+
+[node name="ButtonEffectsModule" type="Node" parent="VBoxContainer/Button3" unique_id=723586105]
+script = ExtResource("2_7vrkn")
+custom_font = ExtResource("3_fu7sn")
+font_color = Color(1, 0.04000002, 0.04000002, 1)
+rotation_amount = 2.0
+hover_modulate = Color(1.199976, 0.05801457, 0.05801457, 1)
+metadata/_custom_type_script = "uid://r4q4ti3xlp4b"
+
+[node name="SaveManager" type="SaveManager" parent="." unique_id=111150236]

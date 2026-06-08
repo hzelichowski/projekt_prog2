@@ -1,0 +1,7 @@
+cd C:\Users\admin\Documents\gierka
+
+
+C:\Users\admin\AppData\Local\Programs\Python\Python314\Scripts\scons.exe platform=windows
+
+
+C:\Users\admin\AppData\Local\Programs\Python\Python314\Scripts\scons.exe platform=windows -j6

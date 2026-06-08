@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dipg55onxiufd"]
+
+[ext_resource type="Texture2D" uid="uid://drdhy4d21ncjc" path="res://assets/all/16-bit-spike-Sheet.png" id="1_kd1db"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5i8ae"]
+size = Vector2(31, 36)
+
+[node name="Trap" type="Trap" unique_id=223611786]
+position = Vector2(-1, -1)
+collision_layer = 2
+collision_mask = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=351304927]
+visible = false
+offset_left = 17.0
+offset_top = 20.0
+offset_right = 44.0
+offset_bottom = 69.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=646647410]
+position = Vector2(-0.014896393, 1.3506203)
+shape = SubResource("RectangleShape2D_5i8ae")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=606799691]
+position = Vector2(0.4851055, -2.649376)
+scale = Vector2(1.935638, 2.793828)
+texture = ExtResource("1_kd1db")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
